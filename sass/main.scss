@@ -1,6 +1,9 @@
 @use "./components/container";
 @use "./layouts/about";
-@use "./layouts/hero";
+@use "./layouts/.property";
+@use "./layouts/contact";
+@use "./layouts/home";
+@use "./layouts/service";
 @use "./utils/base";
 @use "./utils/mixins";
 @use "./utils/variables";

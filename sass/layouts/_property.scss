@@ -1,0 +1,154 @@
+@import "../utils/variables";
+@import "../utils/mixins";
+.property {
+  background: white;
+
+  &__label {
+    font-family: "Poppins", sans-serif;
+    margin-top: 120px;
+    margin-bottom: 16px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 144%;
+    letter-spacing: 0.03em;
+    color: $main-color;
+    text-align: center;
+    padding: 12px 24px;
+    width: 162px;
+    background: $main-p;
+  }
+
+  &__head {
+    margin-bottom: 48px;
+  }
+
+  &__title {
+    margin-bottom: 16px;
+    font-family: "Rubik", sans-serif;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 117%;
+    letter-spacing: 0.01em;
+    color: #054457;
+  }
+
+  &__text {
+    font-family: "Poppins", sans-serif;
+    max-width: 500px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 163%;
+    letter-spacing: 0em;
+    color: #73788c;
+  }
+
+  &__learn {
+    position: relative;
+    text-align: center;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 144%;
+    letter-spacing: 0.03em;
+    color: #69b99d;
+    padding: 12px 24px;
+    width: 185px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      margin-left: 8px;
+      width: 24px;
+      height: 24px;
+      background-image: url(/img/icon/arrow-property.svg);
+      border-radius: 50%;
+    }
+  }
+
+  &__text-learn {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__list {
+    display: flex;
+    gap: 34px;
+  }
+
+  &__card {
+    border: 2px solid rgb(221, 221, 221);
+    padding: 16px;
+    margin-bottom: 124px;
+  }
+
+  &__card-title {
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 133%;
+    letter-spacing: 0em;
+    color: #1f2744;
+  }
+
+  &__location {
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 16px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 163%;
+    letter-spacing: 0em;
+    color: $main-text;
+  }
+
+  &__price {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 133%;
+    letter-spacing: 0em;
+    color: $main-color;
+  }
+
+  &__living {
+    padding: 4px 8px;
+    width: 159px;
+    height: 32px;
+    color: $main-text;
+    background: $main-p;
+  }
+
+  &__price-living {
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__btn {
+    background: $main-color;
+    color: white;
+    border: none;
+    padding: 12px 48px;
+    width: 344px;
+  }
+
+  &__btn-white {
+    background: white;
+    color: $main-color;
+    border-color: $main-color;
+    padding: 12px 48px;
+    width: 344px;
+  }
+}
+section {
+  padding: 80px 0;
+}
+
+span {
+  font-family: "Roboto Slab", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0em;
+  color: #1f2744;
+}

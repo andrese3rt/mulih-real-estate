@@ -1,0 +1,76 @@
+@import "../utils/variables";
+@import "../utils/mixins";
+.header {
+  padding: 20px 0;
+  background: $main-bg;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+
+  &__logo {
+    margin-right: 216px;
+  }
+
+  &__actions {
+    margin-left: 32px;
+  }
+
+  &__sign {
+    color: $main-color;
+    padding: 16px 48px 15px;
+    width: 151px;
+    height: 55px;
+    background: $main-bg;
+  }
+
+  &__login {
+    color: white;
+    padding: 16px 48px 15px;
+    width: 139px;
+    height: 55px;
+    background: $main-color;
+  }
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__list {
+    background: $main-bg;
+    display: flex;
+    gap: 48px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 144%;
+    letter-spacing: 0.03em;
+  }
+}
+
+.item {
+  position: relative;
+  color: #8e8e8e;
+  transition: color 0.5s ease-out;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: scale(0);
+    width: 6px;
+    height: 6px;
+    background: $main-color;
+    border-radius: 50%;
+    transition: 0.3s;
+  }
+
+  &:hover::after {
+    transform: scale(1);
+  }
+
+  &:hover {
+    color: $main-color;
+  }
+}

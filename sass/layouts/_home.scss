@@ -1,0 +1,126 @@
+@import "../utils/variables";
+@import "../utils/mixins";
+.home {
+  background: $main-bg;
+  background-image: url(/img/home-bg.webp);
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 890px;
+
+  &__label {
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 32px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 144%;
+    letter-spacing: 0.03em;
+    color: $main-color;
+    text-align: center;
+    padding: 12px 24px;
+    width: 162px;
+    background: $main-p;
+  }
+
+  &__title {
+    font-family: "Rubik", sans-serif;
+    margin-bottom: 24px;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 116%;
+    letter-spacing: 0em;
+    color: #1f2744;
+    max-width: 600px;
+  }
+
+  &__text {
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 64px;
+    max-width: 500px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0em;
+    color: #73788c;
+  }
+
+  &__buy {
+    border: none;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 133%;
+    letter-spacing: 0em;
+    color: $main-color;
+    padding: 12px 32px;
+    width: 109px;
+    height: 56px;
+    background: white;
+  }
+
+  &__rent {
+    font-family: "Poppins", sans-serif;
+    border: none;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 133%;
+    letter-spacing: 0em;
+    color: $main-text;
+    padding: 12px 32px;
+    width: 119px;
+    height: 56px;
+    background: $main-bg;
+  }
+
+  &__form {
+    margin-bottom: 108px;
+    width: 751px;
+    height: 124px;
+    background: white;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    padding: 20px;
+  }
+
+  &__field {
+    gap: 4px;
+    width: 197px;
+    height: 60px;
+    margin-top: 32px;
+  }
+
+  &__h2 {
+    margin-left: 10px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 144%;
+    letter-spacing: 0em;
+    color: #1f2744;
+  }
+
+  &__search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 18px;
+    padding: 10px 60px;
+    width: 153px;
+    height: 60px;
+    color: white;
+    background: $main-color;
+  }
+}
+
+select {
+  background-image: url("/img/icon/arrow.svg");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  padding: 10px 40px 10px 10px;
+  appearance: none;
+  cursor: pointer;
+  border: none;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 144%;
+  color: $main-text;
+}

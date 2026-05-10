@@ -13,324 +13,396 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <header>
+    <header class="header" id="home">
       <div class="container">
-        <div class="header">
-          <nav>
-            <a href="#"
-              ><img src="./img/mulih.png" width="115" height="40" alt="Mulih"
+        <div class="header__wrapper">
+          <nav class="nav">
+            <a class="header__logo" href="#"
+              ><img src="./img/mulih.svg" width="115" height="40" alt="Mulih"
             /></a>
-            <ul>
-              <li>Home</li>
-              <li>Prooerty</li>
-              <li>About</li>
-              <li>Service</li>
-              <li>Contact</li>
+            <ul class="nav__list">
+              <li><a class="item" href="#home">Home</a></li>
+              <li><a class="item" href="#property">Property</a></li>
+              <li><a class="item" href="#about">About</a></li>
+              <li><a class="item" href="#service">Service</a></li>
+              <li><a class="item" href="#contact">Contact</a></li>
             </ul>
-            <a href="#">Sign in</a>
-            <a href="#">Login</a>
+            <div class="header__actions">
+              <a class="header__sign" href="#">Sign in</a>
+              <a class="header__login" href="#">Login</a>
+            </div>
           </nav>
         </div>
       </div>
     </header>
     <main>
-      <section>
-        <div class="home">
-          <div class="container">
-            <p>REAL ESTATE</p>
-            <h1>Let's hunt for your dream residence</h1>
-            <p>
+      <section class="home">
+        <div class="container">
+          <div class="home__content">
+            <p class="home__label">REAL ESTATE</p>
+            <h1 class="home__title">Let's hunt for your dream residence</h1>
+            <p class="home__text">
               Explore our range of beautiful properties with the addition of
               separate accommodation suitable for you
             </p>
-            <h2>Buy</h2>
-            <h2>Rent</h2>
-            <form>
-              <h3>Location</h3>
-              <select>
-                <option value="">Bogar, Jawa Barat</option>
-              </select>
-              <h3>Type</h3>
-              <select>
-                <option value="">Type</option>
-              </select>
-              <h3>Price Range</h3>
-              <select>
-                <option value="">Price Range</option>
-              </select>
-              <a href="#">Search</a>
+            <div class="home__tabs">
+              <button class="home__buy" type="submit">Buy</button>
+              <button class="home__rent" type="submit">Rent</button>
+            </div>
+            <form class="home__form">
+              <div class="home__field">
+                <label class="home__h2" for="location">Location</label>
+                <select id="location">
+                  <option value="Bogar, Jawa Barat">Bogar, Jawa Barat</option>
+                </select>
+              </div>
+              <div class="home__field">
+                <label class="home__h2" for="type">Type</label>
+                <select id="type">
+                  <option value="home">Home</option>
+                </select>
+              </div>
+              <div class="home__field">
+                <label class="home__h2" for="price">Price Range</label>
+                <select id="price">
+                  <option value="200-350">$200-$350</option>
+                </select>
+              </div>
+              <a class="home__search" href="#">Search</a>
             </form>
           </div>
         </div>
       </section>
-      <section>
-        <div class="property">
-          <div class="container">
-            <p>DISCOVER</p>
-            <h2>Best recomendation</h2>
-            <p>
-              Discover our exclusive selection of the finest one-of-a-kind
-              luxury properties architectural masterpieces
-            </p>
-            <a href="#">Learn More</a>
-            <ul>
-              <li>
-                <img
-                  src="./img/perum-griya-asri.jpg"
-                  width="344"
-                  height="238"
-                  alt="griya"
-                />
-                <h3>Perum griya asri</h3>
-                <h4>Bogor, Jawa Barath</h4>
-                <p>$25,000</p>
-                <p>360m Living Area</p>
-                <button>Send inquiry</button>
-              </li>
-              <li>
-                <img
-                  src="./img/perum-kencana-asri.jpg"
-                  width="344"
-                  height="238"
-                  alt="kencana"
-                />
-                <h3>Perum kencana asri</h3>
-                <h4>Bogor, Jawa Barath</h4>
-                <p>$35,000</p>
-                <p>360m Living Area</p>
-                <button>Send inquiry</button>
-              </li>
-              <li>
-                <img
-                  src="./img/perum-rakjel-elit.jpg"
-                  width="344"
-                  height="238"
-                  alt="rakjel"
-                />
-                <h3>Perum rakjel elit</h3>
-                <h4>Bogor, Jawa Barath</h4>
-                <p>$40,000</p>
-                <p>360m Living Area</p>
-                <button>Send inquiry</button>
-              </li>
-            </ul>
+      <section class="property" id="property">
+        <div class="container">
+          <div class="property__head">
+            <p class="property__label">DISCOVER</p>
+            <h2 class="property__title">Best recomendation</h2>
+            <div class="property__text-learn">
+              <p class="property__text">
+                Discover our exclusive selection of the finest one-of-a-kind
+                luxury properties architectural masterpieces
+              </p>
+              <a class="property__learn" href="#">Learn More</a>
+            </div>
           </div>
-        </div>
-      </section>
-      <section>
-        <div class="about">
-          <div class="container">
-            <p>OUR ADVANTE</p>
-            <h2>Giving you peace of mind</h2>
-            <ul>
-              <li>
-                <img
-                  src="./img/icon/heart.svg"
-                  width="45"
-                  height="43"
-                  alt="heart"
-                />
-                <h3>Comfortable</h3>
-                <p>
-                  Enjoy lifestyle amenities designed to provide every homeowners
-                  modern comfort, a stone's throw away from schools, churches,
-                  and hospitals.
-                </p>
-              </li>
-              <li>
-                <img
-                  src="./img/icon/shield-done.svg"
-                  width="45"
-                  height="43"
-                  alt="shield"
-                />
-                <h3>Extra security</h3>
-                <p>
-                  You can connect with potential tenants without having to share
-                  your phone number. We also require all users to register to
-                  validate their legitimacy.
-                </p>
-              </li>
-              <li>
-                <img
-                  src="./img/icon/star.svg"
-                  width="45"
-                  height="43"
-                  alt="star"
-                />
-                <h3>Luxury</h3>
-                <p>
-                  Find out how we provide the highest standard of professional
-                  property management to give you all the benefits of property.
-                </p>
-              </li>
-              <li>
-                <img
-                  src="./img/icon/ticket-star.svg"
-                  width="45"
-                  height="43"
-                  alt="ticket"
-                />
-                <h3>Best price</h3>
-                <p>
-                  Find out how we provide the highest standard of professional
-                  property management to give you all the benefits of property.
-                </p>
-              </li>
-              <li>
-                <img
-                  src="./img/icon/location.svg"
-                  width="45"
-                  height="43"
-                  alt="location"
-                />
-                <h3>Strategic location</h3>
-                <p>
-                  located in the city center close to the shopping center. Very
-                  good for areas surrounded by international education centers,
-                  start-up office centers.
-                </p>
-              </li>
-              <li>
-                <img
-                  src="./img/icon/graph.svg"
-                  width="45"
-                  height="43"
-                  alt="graph"
-                />
-                <h3>Efficient</h3>
-                <p>
-                  Schedule visits to multiple properties at once in one day
-                  without having to call them one by one. Check everything and
-                  find the best properties for rent
-                </p>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-      <section>
-        <div class="service">
-          <div class="container">
-            <div>
+
+          <ul class="property__list">
+            <li class="property__card">
               <img
+                class="property__img"
+                src="./img/perum-griya-asri.jpg"
+                width="344"
+                height="238"
+                alt="griya"
+              />
+              <h3 class="property__card-title">Perum griya asri</h3>
+              <h4 class="property__location">Bogor, Jawa Barath</h4>
+              <div class="property__price-living">
+                <p class="property__price">$25,000</p>
+                <p class="property__living">
+                  <span>360<sup>m2</sup></span> Living Area
+                </p>
+              </div>
+              <button class="property__btn-white" type="submit">
+                Send inquiry
+              </button>
+            </li>
+            <li class="property__card">
+              <img
+                class="property__img"
+                src="./img/perum-kencana-asri.jpg"
+                width="344"
+                height="238"
+                alt="kencana"
+              />
+              <h3 class="property__card-title">Perum kencana asri</h3>
+              <h4 class="property__location">Bogor, Jawa Barath</h4>
+              <div class="property__price-living">
+                <p class="property__price">$35,000</p>
+                <p class="property__living">
+                  <span>360<sup>m2</sup></span> Living Area
+                </p>
+              </div>
+              <button class="property__btn" type="submit">Send inquiry</button>
+            </li>
+            <li class="property__card">
+              <img
+                class="property__img"
+                src="./img/perum-rakjel-elit.jpg"
+                width="344"
+                height="238"
+                alt="rakjel"
+              />
+              <h3 class="property__card-title">Perum rakjel elit</h3>
+              <h4 class="property__location">Bogor, Jawa Barath</h4>
+              <div class="property__price-living">
+                <p class="property__price">$40,000</p>
+                <p class="property__living">
+                  <span>360<sup>m2</sup></span> Living Area
+                </p>
+              </div>
+              <button class="property__btn-white" type="submit">
+                Send inquiry
+              </button>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="about" id="about">
+        <div class="container">
+          <p class="about__label">OUR ADVANTE</p>
+          <h2 class="about__title">Giving you peace of mind</h2>
+          <ul class="about__list">
+            <li class="about__item">
+              <img class="about__icon" src="./img/icon/heart.svg" alt="heart" />
+              <h3 class="about__item-title">Comfortable</h3>
+              <p class="about__item-text">
+                Enjoy lifestyle amenities designed to provide every homeowners
+                modern comfort, a stone's throw away from schools, churches, and
+                hospitals.
+              </p>
+            </li>
+            <li class="about__item">
+              <img
+                class="about__icon"
+                src="./img/icon/shield-done.svg"
+                alt="shield"
+              />
+              <h3 class="about__item-title">Extra security</h3>
+              <p class="about__item-text">
+                You can connect with potential tenants without having to share
+                your phone number. We also require all users to register to
+                validate their legitimacy.
+              </p>
+            </li>
+            <li class="about__item">
+              <img class="about__icon" src="./img/icon/star.svg" alt="star" />
+              <h3 class="about__item-title">Luxury</h3>
+              <p class="about__item-text">
+                Find out how we provide the highest standard of professional
+                property management to give you all the benefits of property.
+              </p>
+            </li>
+            <li class="about__item">
+              <img
+                class="about__icon"
+                src="./img/icon/ticket-star.svg"
+                alt="ticket"
+              />
+              <h3 class="about__item-title">Best price</h3>
+              <p class="about__item-text">
+                Not sure what you should be charging for your property? Let us
+                do the numbers for you—contact us today for a free rental
+                appraisal on your home.
+              </p>
+            </li>
+            <li class="about__item">
+              <img
+                class="about__icon"
+                src="./img/icon/location.svg"
+                alt="location"
+              />
+              <h3 class="about__item-title">Strategic location</h3>
+              <p class="about__item-text">
+                located in the city center close to the shopping center. Very
+                good for areas surrounded by international education centers,
+                start-up office centers.
+              </p>
+            </li>
+            <li class="about__item">
+              <img class="about__icon" src="./img/icon/graph.svg" alt="graph" />
+              <h3 class="about__item-title">Efficient</h3>
+              <p class="about__item-text">
+                Schedule visits to multiple properties at once in one day
+                without having to call them one by one. Check everything and
+                find the best properties for rent
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="service" id="service">
+        <div class="container">
+          <div class="service__wrapper">
+            <div class="service__img">
+              <img
+                class="service__img"
                 src="./img/service-bg.jpg"
-                width="609"
-                height="475"
                 alt="service"
               />
-              <p>ABOUT US</p>
-              <h2>How much is your property worth now?</h2>
-              <p>
+            </div>
+            <div class="service__rating-card">
+              <img
+                class="service__icon"
+                src="./img/icon/check-mark.svg"
+                alt="check"
+              />
+              <h2 class="service__rating">4.8</h2>
+              <img
+                class="service__stars-icon"
+                src="./img/icon/stars.svg"
+                alt="star"
+              />
+              <p class="service__trusted">Trusted on</p>
+              <span class="service__reviews">500+ Reviews</span>
+              <div class="service__stats-bar">
+                <div class="service__stat-item">
+                  <h2 class="service__stat-number">250+</h2>
+                  <p class="service__stat-text">Property Sale</p>
+                </div>
+                <div class="service__stat-item">
+                  <h2 class="service__stat-number">550+</h2>
+                  <p class="service__stat-texts">Apartment Rent</p>
+                </div>
+              </div>
+            </div>
+            <div class="service__content">
+              <p class="service__label">ABOUT US</p>
+              <h2 class="service__title">
+                How much is your property worth now?
+              </h2>
+              <p class="service__text">
                 We have built our reputation as true local area experts. We have
                 gained more knowledge about buyer interests, our neighborhood
                 and the market than any other brand because we live locally and
                 work for local people.
               </p>
-              <a href="#">Learn More</a>
+              <a class="service__learn" href="#">Learn More</a>
             </div>
           </div>
         </div>
       </section>
-      <section>
-        <div class="contact">
-          <div class="container">
-            <p>CUSTOMER TESTIMONIAL</p>
-            <h2>Peapel say about us?</h2>
-            <a href="#">Learn More</a>
-            <ul>
-              <li>
+      <section class="contact" id="contact">
+        <div class="container">
+          <p class="contact__label">CUSTOMER TESTIMONIAL</p>
+          <div class="contact__title-learn">
+            <h2 class="contact__title">Peapel say about us?</h2>
+            <a class="contact__learn" href="#">Learn More</a>
+          </div>
+          <ul class="contact__list">
+            <li class="contact__card">
+              <img
+                class="contact__icon"
+                src="./img/icon/quotes.svg"
+                width="42"
+                height="34"
+                alt="quotes"
+              />
+              <h3 class="contact__card-title">
+                It proved to be exactly the kind of home we wanted.
+              </h3>
+              <p class="contact__texts">
+                We wish to express our thanks for your hard work in finding us a
+                temporary home, which proved to be exactly what we wanted.
+              </p>
+              <div class="contact__user">
                 <img
-                  src="./img/icon/quotes.svg"
-                  width="42"
-                  height="34"
-                  alt="quotes"
-                />
-                <h3>It proved to be exactly the kind of home we wanted.</h3>
-                <p>
-                  We wish to express our thanks for your hard work in finding us
-                  a temporary home, which proved to be exactly what we wanted.
-                </p>
-                <img
+                  class="contact__avatar"
                   src="./img/jaydon.jpg"
                   width="48"
                   height="48"
                   alt="photo"
                 />
-                <h4>Jaydon Aminoff</h4>
-                <p>UX Designer</p>
-              </li>
-              <li>
+                <div>
+                  <h4 class="contact__name">Jaydon Aminoff</h4>
+                  <p class="contact__job">UX Designer</p>
+                </div>
+              </div>
+            </li>
+            <li class="contact__card">
+              <img
+                class="contact__icon"
+                src="./img/icon/quotes.svg"
+                width="42"
+                height="34"
+                alt="quotes"
+              />
+              <h3 class="contact__card-title">
+                Nobody knows Portland and the peninsula better than David.
+              </h3>
+              <p class="contact__text">
+                My wife and I had a dream of downsizing from our house in Cape
+                Elizabeth into a small condo closer to where we work and play in
+                Portland.
+              </p>
+              <div class="contact__user">
                 <img
-                  src="./img/icon/quotes.svg"
-                  width="42"
-                  height="34"
-                  alt="quotes"
-                />
-                <h3>
-                  Nobody knows Portland and the peninsula better than David.
-                </h3>
-                <p>
-                  My wife and I had a dream of downsizing from our house in Cape
-                  Elizabeth into a small condo closer to where we work and play
-                  in Portland.
-                </p>
-                <img
+                  class="contact__avatar"
                   src="./img/alfredo.jpg"
                   width="48"
                   height="48"
                   alt="photo"
                 />
-                <h4>Alfredo Donin</h4>
-                <p>UI Designer</p>
-              </li>
-              <li>
+                <div>
+                  <h4 class="contact__name">Alfredo Donin</h4>
+                  <p class="contact__job">UI Designer</p>
+                </div>
+              </div>
+            </li>
+            <li class="contact__card">
+              <img
+                class="contact__icon"
+                src="./img/icon/quotes.svg"
+                width="42"
+                height="34"
+                alt="quotes"
+              />
+              <h3 class="contact__card-title">
+                He keeps his client's best interests in sharp focus
+              </h3>
+              <p class="contact__text">
+                After working with David to sell my home in 2013, I was
+                convinced that he's the only realtor I'll ever need. Since then,
+                I've bought two properties and sold one.
+              </p>
+              <div class="contact__user">
                 <img
-                  src="./img/icon/quotes.svg"
-                  width="42"
-                  height="34"
-                  alt="quotes"
-                />
-                <h3>He keeps his client's best interests in sharp focus</h3>
-                <p>
-                  After working with David to sell my home in 2013, I was
-                  convinced that he's the only realtor I'll ever need. Since
-                  then, I've bought two properties and sold one.
-                </p>
-                <img
+                  class="contact__avatar"
                   src="./img/makenna.jpg"
                   width="48"
                   height="48"
                   alt="photo"
                 />
-                <h4>Makenna Korsgaard</h4>
-                <p>UX Researcher</p>
-              </li>
-            </ul>
-          </div>
+                <div>
+                  <h4 class="contact__name">Makenna Korsgaard</h4>
+                  <p class="contact__job">UX Researcher</p>
+                </div>
+              </div>
+            </li>
+          </ul>
         </div>
       </section>
     </main>
-    <footer>
-      <div class="footer">
-        <div class="container">
-          <a href="#">
-            <img src="./img/mulih.png" width="115" height="40" alt="mulih" />
-          </a>
-          <h2>We have built our reputation as true local area experts</h2>
-          <form>
-            <label for="text"
-              >Newsletter
-              <input
-                type="text"
-                minlength="1"
-                maxlength="30"
-                required
-                placeholder="input your email"
-              />
-              <button>Send</button>
-            </label>
-            <nav>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__content">
+          <div class="footer__top">
+            <a href="#">
+              <img class="footer__logo" src="./img/mulih.svg" alt="mulih" />
+            </a>
+            <h2 class="footer__title">
+              We have built our reputation as true local area experts
+            </h2>
+            <form class="footer__form">
+              <label class="footer__label" for="text">Newsletter</label>
+              <div class="footer__input-wrapper">
+                <input
+                  class="footer__input"
+                  type="text"
+                  minlength="1"
+                  maxlength="30"
+                  required
+                  placeholder="input your email"
+                  id="text"
+                />
+                <button class="footer__btn" type="submit">Send</button>
+              </div>
+            </form>
+          </div>
+
+          <nav>
+            <div class="footer__col">
               <h3>Service</h3>
               <ul>
                 <li><a href="#">About us</a></li>
@@ -338,48 +410,51 @@
                 <li><a href="#">Terms & Conditions</a></li>
                 <li><a href="#">Privacy & Policy</a></li>
               </ul>
-            </nav>
-            <nav>
+            </div>
+          </nav>
+
+          <nav>
+            <div class="footer__col">
               <h3>Community</h3>
               <ul>
                 <li><a href="#">Find agents</a></li>
                 <li><a href="#">Lifestyle</a></li>
                 <li><a href="#">Legal notic</a></li>
               </ul>
-            </nav>
-            <div>
-              <h3>Follow us on</h3>
-              <ul>
-                <li>
-                  <a href="#"
-                    ><img
-                      src="./img/icon/instagram.svg"
-                      width="17"
-                      height="17"
-                      alt="Instagram"
-                  /></a>
-                </li>
-                <li>
-                  <a href="#"
-                    ><img
-                      src="./img/icon/youtube.svg"
-                      width="17"
-                      height="17"
-                      alt="Youtube"
-                  /></a>
-                </li>
-                <li>
-                  <a href="#"
-                    ><img
-                      src="./img/icon/facebook.svg"
-                      width="17"
-                      height="17"
-                      alt="facebook"
-                  /></a>
-                </li>
-              </ul>
             </div>
-          </form>
+          </nav>
+          <div class="footer__follow">
+            <h3>Follow us on</h3>
+            <ul>
+              <li>
+                <a href="#"
+                  ><img
+                    src="./img/icon/instagram.svg"
+                    width="17"
+                    height="17"
+                    alt="Instagram"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img
+                    src="./img/icon/youtube.svg"
+                    width="17"
+                    height="17"
+                    alt="Youtube"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img
+                    src="./img/icon/facebook.svg"
+                    width="17"
+                    height="17"
+                    alt="facebook"
+                /></a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </footer>

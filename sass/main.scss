@@ -1,7 +1,9 @@
 @use "./components/container";
+@use "./layouts/footer";
 @use "./layouts/about";
-@use "./layouts/.property";
+@use "./layouts/property";
 @use "./layouts/contact";
+@use "./layouts/header";
 @use "./layouts/home";
 @use "./layouts/service";
 @use "./utils/base";

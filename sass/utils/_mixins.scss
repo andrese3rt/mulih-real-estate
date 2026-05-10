@@ -11,7 +11,7 @@
 }
 
 @mixin desktop-screen {
-  @media screen and (min-width: 1240px) {
+  @media screen and (min-width: 1232px) {
     @content;
   }
 }

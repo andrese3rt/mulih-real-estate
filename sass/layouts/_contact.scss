@@ -1,0 +1,134 @@
+@import "../utils/variables";
+@import "../utils/mixins";
+.contact {
+  padding: 80px 0;
+
+  &__label {
+    margin-bottom: 16px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 144%;
+    letter-spacing: 0.03em;
+    color: $main-color;
+    text-align: center;
+    padding: 12px 24px;
+    width: 274px;
+    background: #f8f9fe;
+  }
+
+  &__title {
+    margin-bottom: 48px;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 117%;
+    letter-spacing: 0.01em;
+    text-align: center;
+    color: #054457;
+  }
+
+  &__learn {
+    color: $main-color;
+    position: relative;
+    text-align: center;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 144%;
+    letter-spacing: 0.03em;
+    padding: 12px 24px;
+    width: 185px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      margin-left: 8px;
+      width: 24px;
+      height: 24px;
+      background-image: url(/img/icon/arrow-property.svg);
+      border-radius: 50%;
+    }
+  }
+
+  &__title-learn {
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__list {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 120px;
+  }
+
+  &__card {
+    border: 2px solid #dedcda;
+    padding: 16px;
+    width: 376px;
+    height: 350px;
+  }
+
+  &__icon {
+    margin-bottom: 24px;
+  }
+
+  &__card-title {
+    max-width: 300px;
+    margin-bottom: 16px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 156%;
+    letter-spacing: 0em;
+    color: #1f2744;
+  }
+
+  &__texts {
+    font-family: "Poppins", sans-serif;
+    max-width: 300px;
+    margin-bottom: 24px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0em;
+    color: #1f2744;
+  }
+
+  &__text {
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 24px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0em;
+    color: #1f2744;
+  }
+
+  &__name {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 163%;
+    letter-spacing: 0.03em;
+    color: #0b2e29;
+  }
+
+  &__job {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 183%;
+    letter-spacing: 0.04em;
+    color: #767676;
+  }
+
+  &__user {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+
+  &__avatar {
+    border-radius: 50px;
+  }
+}

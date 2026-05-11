@@ -329,7 +329,7 @@ section {
   margin-left: 8px;
   width: 24px;
   height: 24px;
-  background-image: url("/img/icon/arrow-property.svg");
+  background-image: url("img/icon/arrow-property.svg");
   border-radius: 50%;
 }
 .property__text-learn {
@@ -499,7 +499,7 @@ span {
   margin-left: 8px;
   width: 24px;
   height: 24px;
-  background-image: url("/img/icon/arrow-property.svg");
+  background-image: url("img/icon/arrow-property.svg");
   border-radius: 50%;
 }
 .contact__title-learn {
@@ -706,7 +706,7 @@ span {
 
 .home {
   background: #f5f5f5;
-  background-image: url("/img/home-bg.webp");
+  background-image: url("img/home-bg.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -854,7 +854,7 @@ span {
 }
 
 select {
-  background-image: url("/img/icon/arrow.svg");
+  background-image: url("img/icon/arrow.svg");
   background-repeat: no-repeat;
   background-position: right 10px center;
   padding: 10px 40px 10px 10px;

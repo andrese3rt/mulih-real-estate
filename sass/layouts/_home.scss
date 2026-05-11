@@ -2,7 +2,7 @@
 @import "../utils/mixins";
 .home {
   background: $main-bg;
-  background-image: url("/img/home-bg.webp");
+  background-image: url("img/home-bg.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -152,7 +152,7 @@
 }
 
 select {
-  background-image: url("/img/icon/arrow.svg");
+  background-image: url("img/icon/arrow.svg");
   background-repeat: no-repeat;
   background-position: right 10px center;
   padding: 10px 40px 10px 10px;

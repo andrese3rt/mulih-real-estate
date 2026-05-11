@@ -19,20 +19,29 @@
 
   &__wrapper {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     gap: 40px;
+
+    @include desktop-screen {
+      flex-direction: row;
+      justify-content: space-between;
+    }
   }
 
   &__img {
     position: relative;
     margin-bottom: 120px;
     margin-top: 116px;
-    width: 609px;
+    width: 100%;
     height: 475px;
+
+    @include desktop-screen {
+      width: 609px;
+    }
   }
 
   &__rating-card {
-    margin-left: 96px;
+    margin-left: 40px;
     margin-top: 132px;
     width: 174px;
     height: 236px;
@@ -40,6 +49,10 @@
     background: white;
     padding: 20px;
     text-align: center;
+
+    @include desktop-screen {
+      margin-left: 96px;
+    }
   }
 
   &__icon {
@@ -85,12 +98,24 @@
 
   &__stats-bar {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    gap: 20px;
     position: absolute;
-    margin-left: -61px;
+    margin-left: -70px;
     margin-top: 260px;
-    padding: 12px 32px;
+    padding: 12px 30px;
     background: white;
+
+    @include tablet-screen {
+      flex-direction: row;
+    }
+
+    @include desktop-screen {
+      flex-direction: row;
+      justify-content: space-between;
+      margin-left: -61px;
+      padding: 12px 32px;
+    }
   }
 
   &__stat-item {
@@ -130,29 +155,42 @@
   }
 
   &__content {
-    margin-left: 56px;
+    margin-left: 6px;
     margin-top: 247px;
-    width: 50%;
+    width: 100%;
+
+    @include desktop-screen {
+      width: 50%;
+      margin-left: 56px;
+    }
   }
 
   &__title {
     margin-bottom: 16px;
     font-weight: 600;
-    font-size: 48px;
+    font-size: 36px;
     line-height: 117%;
     letter-spacing: 0.01em;
     color: #054457;
+
+    @include desktop-screen {
+      font-size: 48px;
+    }
   }
 
   &__text {
     margin-bottom: 48px;
-    max-width: 500px;
+    max-width: 200px;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 163%;
     letter-spacing: 0em;
     color: #73788c;
+
+    @include desktop-screen {
+      max-width: 500px;
+    }
   }
 
   &__learn {

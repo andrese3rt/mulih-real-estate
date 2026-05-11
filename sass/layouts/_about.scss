@@ -21,24 +21,47 @@
   &__title {
     font-family: "Rubik", sans-serif;
     font-weight: 600;
-    font-size: 48px;
+    font-size: 36px;
     line-height: 117%;
     letter-spacing: 0.01em;
     color: #054457;
     margin-bottom: 48px;
+
+    @include desktop-screen {
+      font-size: 48px;
+    }
   }
 
   &__list {
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    flex-direction: column;
     gap: 32px;
     margin-bottom: 84px;
+
+    @include tablet-screen {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
+    @include desktop-screen {
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
   }
 
   &__item {
-    width: 376px;
-    height: 268px;
+    width: 100%;
+    height: auto;
+
+    @include tablet-screen {
+      width: 45%;
+    }
+
+    @include desktop-screen {
+      width: 376px;
+      height: 268px;
+    }
   }
 
   &__icon {

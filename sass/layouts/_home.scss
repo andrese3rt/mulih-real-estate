@@ -2,10 +2,17 @@
 @import "../utils/mixins";
 .home {
   background: $main-bg;
-  background-image: url(/img/home-bg.webp);
+  background-image: url("/img/home-bg.webp");
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
-  background-position: right center;
   background-size: 890px;
+
+  @include desktop-screen {
+    background-position: right center;
+    background-size: 890px;
+    color: #73788c;
+  }
 
   &__label {
     font-family: "Poppins", sans-serif;
@@ -25,24 +32,37 @@
     font-family: "Rubik", sans-serif;
     margin-bottom: 24px;
     font-weight: 600;
-    font-size: 64px;
+    font-size: 38px;
     line-height: 116%;
     letter-spacing: 0em;
     color: #1f2744;
-    max-width: 600px;
+    max-width: 200px;
+
+    @include desktop-screen {
+      max-width: 600px;
+      font-size: 64px;
+    }
   }
 
   &__text {
     font-family: "Poppins", sans-serif;
     margin-bottom: 64px;
-    max-width: 500px;
+
+    max-width: 200px;
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
     letter-spacing: 0em;
-    color: #73788c;
-  }
+    color: black;
 
+    @include desktop-screen {
+      color: #73788c;
+      max-width: 500px;
+    }
+  }
+  &__tabs {
+    display: flex;
+  }
   &__buy {
     border: none;
     font-weight: 500;
@@ -72,20 +92,36 @@
 
   &__form {
     margin-bottom: 108px;
-    width: 751px;
-    height: 124px;
+    width: 188px;
+    height: auto;
     background: white;
     display: flex;
-    flex-direction: row;
-    gap: 40px;
+    flex-direction: column;
+    gap: 20px;
     padding: 20px;
+
+    @include desktop-screen {
+      flex-direction: row;
+      width: 751px;
+      height: 124px;
+      gap: 40px;
+    }
   }
 
   &__field {
     gap: 4px;
-    width: 197px;
-    height: 60px;
-    margin-top: 32px;
+    width: 100%;
+    margin-top: 0;
+
+    @include tablet-screen {
+      width: 45%;
+    }
+
+    @include desktop-screen {
+      width: 197px;
+      height: 60px;
+      margin-top: 32px;
+    }
   }
 
   &__h2 {
@@ -104,10 +140,14 @@
     align-items: center;
     margin-top: 18px;
     padding: 10px 60px;
-    width: 153px;
-    height: 60px;
+    width: 50px;
     color: white;
     background: $main-color;
+
+    @include desktop-screen {
+      width: 153px;
+      height: 60px;
+    }
   }
 }
 

@@ -1,50 +1,76 @@
 @import "../utils/variables";
 @import "../utils/mixins";
 .header {
-  padding: 20px 0;
+  padding: 15px 0;
   background: $main-bg;
   position: sticky;
   top: 0;
   z-index: 100;
 
-  &__logo {
-    margin-right: 216px;
+  @include desktop-screen {
+    padding: 20px 0;
+
+    &__logo {
+      margin-right: 25px;
+
+      @include desktop-screen {
+        margin-right: 216px;
+        margin-top: 10px;
+      }
+    }
+
+    &__actions {
+      margin-top: 16px;
+      margin-left: 1px;
+
+      @include desktop-screen {
+        margin-left: 32px;
+      }
+    }
+
+    &__sign {
+      color: $main-color;
+      padding: 16px 48px 15px;
+      width: 151px;
+      height: 55px;
+      background: $main-bg;
+    }
+
+    &__login {
+      color: white;
+      padding: 16px 48px 15px;
+      width: 139px;
+      height: 55px;
+      background: $main-color;
+    }
   }
+  .nav {
+    @include desktop-screen {
+      display: flex;
+    }
+    @include tablet-screen {
+      flex-direction: row;
+    }
+    &__list {
+      background: $main-bg;
+      width: 100px;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 144%;
+      letter-spacing: 0.03em;
 
-  &__actions {
-    margin-left: 32px;
-  }
+      @include tablet-screen {
+        flex-direction: row;
+        gap: 24px;
+      }
 
-  &__sign {
-    color: $main-color;
-    padding: 16px 48px 15px;
-    width: 151px;
-    height: 55px;
-    background: $main-bg;
-  }
-
-  &__login {
-    color: white;
-    padding: 16px 48px 15px;
-    width: 139px;
-    height: 55px;
-    background: $main-color;
-  }
-}
-
-.nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-  &__list {
-    background: $main-bg;
-    display: flex;
-    gap: 48px;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 144%;
-    letter-spacing: 0.03em;
+      @include desktop-screen {
+        display: flex;
+        width: auto;
+        gap: 48px;
+        margin-top: 16px;
+      }
+    }
   }
 }
 

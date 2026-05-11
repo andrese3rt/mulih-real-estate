@@ -27,8 +27,19 @@
   &__content {
     margin-top: 75px;
     display: flex;
-    justify-content: space-between;
-    gap: 80px;
+    flex-direction: column;
+    gap: 40px;
+
+    @include tablet-screen {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
+    @include desktop-screen {
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 80px;
+    }
   }
 
   &__form {
@@ -46,11 +57,23 @@
 
   &__input-wrapper {
     display: flex;
+    flex-direction: column;
+    gap: 10px;
     margin-top: 16px;
+
+    @include tablet-screen {
+      flex-direction: row;
+    }
+
+    @include desktop-screen {
+      flex-direction: row;
+      gap: 0;
+    }
   }
 
   &__input {
-    width: 351px;
+    width: 250px;
+    height: 42px;
     border: none;
     outline: none;
     padding: 0 20px;
@@ -59,16 +82,29 @@
     font-size: 16px;
     line-height: 163%;
     letter-spacing: 0.03em;
+
+    @include desktop-screen {
+      width: 351px;
+    }
   }
 
   &__btn {
-    width: 88px;
+    width: 100px;
     height: 42px;
     border: none;
     cursor: pointer;
     background: $main-color;
     color: white;
     transition: 0.3s;
+
+    @include tablet-screen {
+      width: 88px;
+    }
+
+    @include desktop-screen {
+      width: 88px;
+      height: 42px;
+    }
 
     &:hover {
       background: green;
@@ -106,7 +142,13 @@
   }
 
   &__follow ul {
+    display: flex;
+    justify-content: flex-start;
     flex-direction: row;
+
+    @include desktop-screen {
+      flex-direction: row;
+    }
   }
 
   &__follow a {
